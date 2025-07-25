@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navchetna Kyari - Plantation Model Selector</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>🌳 Navchetna Kyari Plantation Planner</h1>
+            <p>Select plantation models and calculate tree requirements for your kyaris</p>
+        </header>
+
+        <div class="main-content">
+            <!-- Model Selection Section -->
+            <section class="model-selection">
+                <h2>Select Plantation Model</h2>
+                <div class="model-filter">
+                    <label for="boundaryFilter">Filter by Boundary Tree:</label>
+                    <select id="boundaryFilter" onchange="filterModels()">
+                        <option value="all">All Combinations</option>
+                        <option value="Shisham">Shisham Boundary</option>
+                        <option value="Teak">Teak Boundary</option>
+                        <option value="Mahogany">Mahogany Boundary</option>
+                    </select>
+                </div>
+                <div class="model-cards" id="modelCardsContainer">
+                    <!-- Model cards will be dynamically generated -->
+                </div>
+            </section>
+
+            <!-- Kyari Selection Section -->
+            <section class="kyari-section">
+                <h2>Select Kyari for Plantation</h2>
+                <div class="kyari-selection">
+                    <div class="selection-group">
+                        <label for="farmSelect">Select Farm:</label>
+                        <select id="farmSelect" onchange="loadKyarisForFarm()">
+                            <option value="">Choose a farm...</option>
+                        </select>
+                    </div>
+                    <div class="selection-group">
+                        <label for="kyariSelect">Select Kyari:</label>
+                        <select id="kyariSelect" onchange="loadKyariDetails()" disabled>
+                            <option value="">Choose a kyari...</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="kyari-details" id="kyariDetailsContainer" style="display: none;">
+                    <h3>Selected Kyari Details</h3>
+                    <div class="details-grid">
+                        <div class="detail-item">
+                            <label>Kyari ID:</label>
+                            <span id="selectedKyariId">-</span>
+                        </div>
+                        <div class="detail-item">
+                            <label>Farmer Name:</label>
+                            <span id="selectedFarmerName">-</span>
+                        </div>
+                        <div class="detail-item">
+                            <label>Area:</label>
+                            <span id="selectedArea">-</span> acres
+                        </div>
+                        <div class="detail-item">
+                            <label>Perimeter:</label>
+                            <span id="selectedPerimeter">-</span> meters
+                        </div>
+                        <div class="detail-item">
+                            <label>District:</label>
+                            <span id="selectedDistrict">-</span>
+                        </div>
+                        <div class="detail-item">
+                            <label>Block:</label>
+                            <span id="selectedBlock">-</span>
+                        </div>
+                    </div>
+                    
+                    <div class="plot-visualization">
+                        <h4>Kyari Visualization</h4>
+                        <div class="plot-container" id="plotContainer">
+                            <p>Plot visualization will appear here</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Calculation Results Section -->
+            <section class="results-section">
+                <h2>Plantation Calculation Results</h2>
+                <button class="calculate-btn" onclick="calculatePlantation()">Calculate Trees</button>
+                
+                <div class="results-container" id="resultsContainer">
+                    <div class="calculation-summary">
+                        <h3>Summary</h3>
+                        <div id="summaryResults"></div>
+                    </div>
+                    
+                    <div class="detailed-results">
+                        <h3>Detailed Breakdown</h3>
+                        <div id="detailedResults"></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 

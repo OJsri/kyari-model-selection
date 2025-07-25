@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<name>Kyari Boundaries</name>
+<Placemark>
+<name>75112</name>
+<ExtendedData>
+<Data name="Kyari ID"><value>75112</value></Data>
+<Data name="Kyari Name"><value>Kyaari 5</value></Data>
+<Data name="Farm ID"><value>68174</value></Data>
+<Data name="Farmer ID"><value>155832</value></Data>
+<Data name="Farmer Name"><value>Surendra pratap Singh</value></Data>
+<Data name="Kyari Type"><value>PLANTATION</value></Data>
+<Data name="Plantation Model"><value>None</value></Data>
+<Data name="Year"><value>None</value></Data>
+<Data name="Total Area"><value>0.6879</value></Data>
+<Data name="Created On"><value>2025-07-21 05:55:57</value></Data>
+<Data name="Total Baseline Trees"><value>0</value></Data>
+<Data name="Total Sapling Trees"><value>0</value></Data>
+<Data name="Total Retro Trees"><value>1</value></Data>
+<Data name="Specie Names"><value></value></Data>
+<Data name="Block"><value>Kone</value></Data>
+<Data name="District"><value>Sonbhadra</value></Data>
+<Data name="State"><value>Uttar Pradesh</value></Data>
+<Data name="Country"><value>India</value></Data>
+<Data name="Organisation"><value>Guiding Souls Trust</value></Data>
+<Data name="Surveyor Name"><value>Sandeep Tiwari</value></Data>
+<Data name="RS Status"><value>REJECTED</value></Data>
+<Data name="Verification Status"><value>ACCEPTED</value></Data>
+<Data name="Verification Remarks"><value>Valid Boundary</value></Data>
+<Data name="Pre Feasibility Status"><value>REJECTED</value></Data>
+</ExtendedData>
+<Polygon><outerBoundaryIs><LinearRing><coordinates>83.34378409707273,24.39611212359963,0 83.34383266017842,24.39622461859449,0 83.34394740751314,24.396218912705105,0 83.34395545587282,24.39614078636674,0 83.34401715996499,24.396099281729732,0 83.34407886405711,24.396084633031073,0 83.34411910585638,24.396023596768323,0 83.34405471897767,24.39583804634889,0 83.34402520832488,24.39577945142288,0 83.34395176174013,24.39579217787518,0 83.34385887555474,24.395989416448526,0 83.34378912310268,24.396052894178162,0 83.34366571491839,24.395982092092883,0 83.3436818116382,24.395896641247536,0 83.34369790835775,24.395813631799548,0 83.34367814120569,24.39577062032269,0 83.34320448382313,24.395926700253607,0 83.34332224339072,24.396201485464232,0 83.34335847710382,24.396226216103816,0 83.34344302243427,24.396204233313327,0 83.34348529509941,24.396157519870584,0 83.3435124703844,24.396193241916546,0 83.3436453273325,24.396228963952467,0 83.3436958005167,24.39611212359963,0 83.34378409707273,24.39611212359963,0</coordinates></LinearRing></outerBoundaryIs></Polygon>
+</Placemark>
+<Placemark>
+<name>75111</name>
+<ExtendedData>
+<Data name="Kyari ID"><value>75111</value></Data>
+<Data name="Kyari Name"><value>Kyaari 4</value></Data>
+<Data name="Farm ID"><value>68174</value></Data>
+<Data name="Farmer ID"><value>155832</value></Data>
+<Data name="Farmer Name"><value>Surendra pratap Singh</value></Data>
+<Data name="Kyari Type"><value>PLANTATION</value></Data>
+<Data name="Plantation Model"><value>None</value></Data>
+<Data name="Year"><value>None</value></Data>
+<Data name="Total Area"><value>0.5135</value></Data>
+<Data name="Created On"><value>2025-07-21 05:54:00</value></Data>
+<Data name="Total Baseline Trees"><value>0</value></Data>
+<Data name="Total Sapling Trees"><value>0</value></Data>
+<Data name="Total Retro Trees"><value>1</value></Data>
+<Data name="Specie Names"><value></value></Data>
+<Data name="Block"><value>Kone</value></Data>
+<Data name="District"><value>Sonbhadra</value></Data>
+<Data name="State"><value>Uttar Pradesh</value></Data>
+<Data name="Country"><value>India</value></Data>
+<Data name="Organisation"><value>Guiding Souls Trust</value></Data>
+<Data name="Surveyor Name"><value>Sandeep Tiwari</value></Data>
+<Data name="RS Status"><value>REJECTED</value></Data>
+<Data name="Verification Status"><value>ACCEPTED</value></Data>
+<Data name="Verification Remarks"><value>Valid Boundary</value></Data>
+<Data name="Pre Feasibility Status"><value>REJECTED</value></Data>
+</ExtendedData>
+<Polygon><outerBoundaryIs><LinearRing><coordinates>83.34444267959535,24.397332501380216,0 83.34460096400554,24.397305645693606,0 83.34461706072535,24.397244610020785,0 83.3447404689096,24.397249492875773,0 83.34477266234903,24.39727879000127,0 83.34490411889301,24.397254375730366,0 83.34521915763617,24.397173321924157,0 83.34566675126553,24.396984928655204,0 83.34557213276058,24.39684421527663,0 83.34549433194829,24.39684421527654,0 83.3454567729356,24.396885719668695,0 83.34532799917815,24.39687351249597,0 83.34527702623248,24.396827125228647,0 83.34524483279311,24.39684421527654,0 83.3452636122995,24.397000467035085,0 83.34443999680876,24.39724216859321,0 83.34444267959535,24.397332501380216,0</coordinates></LinearRing></outerBoundaryIs></Polygon>
+</Placemark>
+<Placemark>
+<name>75110</name>
+<ExtendedData>
+<Data name="Kyari ID"><value>75110</value></Data>
+<Data name="Kyari Name"><value>Kyaari 3</value></Data>
+<Data name="Farm ID"><value>68174</value></Data>
+<Data name="Farmer ID"><value>155832</value></Data>
+<Data name="Farmer Name"><value>Surendra pratap Singh</value></Data>
+<Data name="Kyari Type"><value>PLANTATION</value></Data>
+<Data name="Plantation Model"><value>None</value></Data>
+<Data name="Year"><value>None</value></Data>
+<Data name="Total Area"><value>3.1617</value></Data>
+<Data name="Created On"><value>2025-07-21 05:52:34</value></Data>
+<Data name="Total Baseline Trees"><value>0</value></Data>
+<Data name="Total Sapling Trees"><value>0</value></Data>
+<Data name="Total Retro Trees"><value>4</value></Data>
+<Data name="Specie Names"><value></value></Data>
+<Data name="Block"><value>Kone</value></Data>
+<Data name="District"><value>Sonbhadra</value></Data>
+<Data name="State"><value>Uttar Pradesh</value></Data>
+<Data name="Country"><value>India</value></Data>
+<Data name="Organisation"><value>Guiding Souls Trust</value></Data>
+<Data name="Surveyor Name"><value>Sandeep Tiwari</value></Data>
+<Data name="RS Status"><value>REJECTED</value></Data>
+<Data name="Verification Status"><value>ACCEPTED</value></Data>
+<Data name="Verification Remarks"><value>Valid Boundary</value></Data>
+<Data name="Pre Feasibility Status"><value>REJECTED</value></Data>
+</ExtendedData>
+<Polygon><outerBoundaryIs><LinearRing><coordinates>83.34414839963046,24.39832023734455,0 83.34432432129633,24.398255424023233,0 83.34436843207227,24.398294713745113,0 83.34437037210014,24.398506868592925,0 83.34463516422322,24.398548775972678,0 83.34465014451878,24.398222400621282,0 83.34487614546961,24.39820036486965,0 83.3450214317953,24.398153844937106,0 83.34506396925974,24.398492027778087,0 83.34530130028725,24.39842489341216,0 83.34524061530828,24.398009943419552,0 83.34518730640411,24.39770521842153,0 83.345165219697,24.39738406557591,0 83.34489962382226,24.397503695334553,0 83.3446420763072,24.39759891077579,0 83.34447037796396,24.397650180598998,0 83.34439339750196,24.39742774877926,0 83.34429266136823,24.397419891077032,0 83.34429553954347,24.397357029440503,0 83.3443214431207,24.397294167772895,0 83.34431856494537,24.397212971405636,0 83.34415450895602,24.397102963341148,0 83.3439990874926,24.397053197757167,0 83.34392425493607,24.397150109666633,0 83.34374061606482,24.397148356687648,0 83.34377171164792,24.397210352167445,0 83.34380500294358,24.397314373774893,0 83.34395015851355,24.39727059463961,0 83.34401923471974,24.39715272890622,0 83.3440739200495,24.397210352167356,0 83.34417465618321,24.397210352167356,0 83.34421207246135,24.397307263956225,0 83.34420343793568,24.397370125617524,0 83.34406528552361,24.397273213876616,0 83.34388108230762,24.397338694790687,0 83.34390986406014,24.397414652608397,0 83.34388012096909,24.39747550779839,0 83.34393864581266,24.397650383476176,0 83.3439933311421,24.397694910368397,0 83.34402304805391,24.397796225895483,0 83.34411694558541,24.397805991562418,0 83.3441249939451,24.397737631877774,0 83.34425108491592,24.397740073295747,0 83.34429669228854,24.397803550145937,0 83.34415182181152,24.397830405726584,0 83.34407670378606,24.397830405726584,0 83.34399011522025,24.397880783372447,0 83.34405718488549,24.398068772203096,0 83.34414839963046,24.39832023734455,0</coordinates></LinearRing></outerBoundaryIs></Polygon>
+</Placemark>
+<Placemark>
+<name>75109</name>
+<ExtendedData>
+<Data name="Kyari ID"><value>75109</value></Data>
+<Data name="Kyari Name"><value>Kyaari 2</value></Data>
+<Data name="Farm ID"><value>68174</value></Data>
+<Data name="Farmer ID"><value>155832</value></Data>
+<Data name="Farmer Name"><value>Surendra pratap Singh</value></Data>
+<Data name="Kyari Type"><value>PLANTATION</value></Data>
+<Data name="Plantation Model"><value>BOUNDARY+MIXED</value></Data>
+<Data name="Year"><value>None</value></Data>
+<Data name="Total Area"><value>1.4481</value></Data>
+<Data name="Created On"><value>2025-07-21 05:50:38</value></Data>
+<Data name="Total Baseline Trees"><value>0</value></Data>
+<Data name="Total Sapling Trees"><value>0</value></Data>
+<Data name="Total Retro Trees"><value>4</value></Data>
+<Data name="Specie Names"><value></value></Data>
+<Data name="Block"><value>Kone</value></Data>
+<Data name="District"><value>Sonbhadra</value></Data>
+<Data name="State"><value>Uttar Pradesh</value></Data>
+<Data name="Country"><value>India</value></Data>
+<Data name="Organisation"><value>Guiding Souls Trust</value></Data>
+<Data name="Surveyor Name"><value>Sandeep Tiwari</value></Data>
+<Data name="RS Status"><value>ACCEPTED</value></Data>
+<Data name="Verification Status"><value>ACCEPTED</value></Data>
+<Data name="Verification Remarks"><value>Valid Boundary</value></Data>
+<Data name="Pre Feasibility Status"><value>ACCEPTED</value></Data>
+</ExtendedData>
+<Polygon><outerBoundaryIs><LinearRing><coordinates>83.34381803870201,24.398563820441396,0 83.34397461265326,24.39853298170743,0 83.34419073165397,24.398512367080006,0 83.34418289774378,24.398457377389875,0 83.34403513003049,24.398060706718255,0 83.34397342593832,24.39788004212133,0 83.34389025955328,24.397845862303576,0 83.34388489397992,24.39774088137729,0 83.34392245299276,24.397684728752836,0 83.34385538332748,24.397452793735447,0 83.34379636202188,24.39742349665057,0 83.34367831941088,24.397469883698683,0 83.34368636777077,24.397550450636768,0 83.3435414972936,24.397579747692404,0 83.3435254005738,24.397491856505194,0 83.3435414972936,24.397433262346272,0 83.34364344318499,24.397443028041234,0 83.34376953415587,24.39739664098326,0 83.34380021268238,24.397332347316006,0 83.34376533645623,24.39724445595647,0 83.3435494825244,24.397315303699695,0 83.34337516452342,24.397496739350398,0 83.3433753789726,24.397541847549906,0 83.34366780271361,24.398291361804755,0 83.34380194204432,24.398562357720724,0 83.34381803870201,24.398563820441396,0</coordinates></LinearRing></outerBoundaryIs></Polygon>
+</Placemark>
+<Placemark>
+<name>75108</name>
+<ExtendedData>
+<Data name="Kyari ID"><value>75108</value></Data>
+<Data name="Kyari Name"><value>Kyaari 1</value></Data>
+<Data name="Farm ID"><value>68174</value></Data>
+<Data name="Farmer ID"><value>155832</value></Data>
+<Data name="Farmer Name"><value>Surendra pratap Singh</value></Data>
+<Data name="Kyari Type"><value>PLANTATION</value></Data>
+<Data name="Plantation Model"><value>None</value></Data>
+<Data name="Year"><value>None</value></Data>
+<Data name="Total Area"><value>0.9812</value></Data>
+<Data name="Created On"><value>2025-07-21 05:49:02</value></Data>
+<Data name="Total Baseline Trees"><value>0</value></Data>
+<Data name="Total Sapling Trees"><value>0</value></Data>
+<Data name="Total Retro Trees"><value>1</value></Data>
+<Data name="Specie Names"><value></value></Data>
+<Data name="Block"><value>Kone</value></Data>
+<Data name="District"><value>Sonbhadra</value></Data>
+<Data name="State"><value>Uttar Pradesh</value></Data>
+<Data name="Country"><value>India</value></Data>
+<Data name="Organisation"><value>Guiding Souls Trust</value></Data>
+<Data name="Surveyor Name"><value>Sandeep Tiwari</value></Data>
+<Data name="RS Status"><value>ACCEPTED</value></Data>
+<Data name="Verification Status"><value>ACCEPTED</value></Data>
+<Data name="Verification Remarks"><value>Valid Boundary</value></Data>
+<Data name="Pre Feasibility Status"><value>ACCEPTED</value></Data>
+</ExtendedData>
+<Polygon><outerBoundaryIs><LinearRing><coordinates>83.34297085982845,24.39771535745858,0 83.34316402046456,24.39803030003959,0 83.34325544536114,24.398075895827365,0 83.34329098463058,24.39816932834616,0 83.34337864339378,24.39834280042907,0 83.34336254667402,24.398396511355653,0 83.3433759606073,24.398538112779992,0 83.34345644420556,24.398586940820724,0 83.34355839009694,24.39860891343271,0 83.34379447531913,24.398579616615713,0 83.34365228762844,24.398281765257618,0 83.34358253517638,24.398269558219784,0 83.34356107288352,24.39819143314943,0 83.34360399746926,24.39814748777615,0 83.34355034173701,24.398008327326945,0 83.34351814829769,24.39801565156484,0 83.34347254092533,24.398103542387815,0 83.34338669175371,24.398086452510324,0 83.34336522946084,24.398042507100527,0 83.3435396105906,24.397964381889963,0 83.34335718110091,24.397527368101738,0 83.34319084833082,24.397603052162214,0 83.34297085982845,24.39771535745858,0</coordinates></LinearRing></outerBoundaryIs></Polygon>
+</Placemark>
+<Placemark>
+<name>75094</name>
+<ExtendedData>
+<Data name="Kyari ID"><value>75094</value></Data>
+<Data name="Kyari Name"><value>Kyaari 1</value></Data>
+<Data name="Farm ID"><value>68175</value></Data>
+<Data name="Farmer ID"><value>155835</value></Data>
+<Data name="Farmer Name"><value>Sushma Devi</value></Data>
+<Data name="Kyari Type"><value>PLANTATION</value></Data>
+<Data name="Plantation Model"><value>BOUNDARY+MIXED</value></Data>
+<Data name="Year"><value>None</value></Data>
+<Data name="Total Area"><value>8.1132</value></Data>
+<Data name="Created On"><value>2025-07-21 03:49:02</value></Data>
+<Data name="Total Baseline Trees"><value>0</value></Data>
+<Data name="Total Sapling Trees"><value>0</value></Data>
+<Data name="Total Retro Trees"><value>4</value></Data>
+<Data name="Specie Names"><value></value></Data>
+<Data name="Block"><value>Kone</value></Data>
+<Data name="District"><value>Sonbhadra</value></Data>
+<Data name="State"><value>Uttar Pradesh</value></Data>
+<Data name="Country"><value>India</value></Data>
+<Data name="Organisation"><value>Guiding Souls Trust</value></Data>
+<Data name="Surveyor Name"><value>Sandeep Tiwari</value></Data>
+<Data name="RS Status"><value>REJECTED</value></Data>
+<Data name="Verification Status"><value>ACCEPTED</value></Data>
+<Data name="Verification Remarks"><value>Valid Boundary</value></Data>
+<Data name="Pre Feasibility Status"><value>REJECTED</value></Data>
+</ExtendedData>
+<Polygon><outerBoundaryIs><LinearRing><coordinates>83.34745873359583,24.398318519488623,0 83.34749299958987,24.398390878430124,0 83.34764323564019,24.398373788591538,0 83.34767006350657,24.398239511208118,0 83.34764055285372,24.398124764967235,0 83.34755202089558,24.39808814380469,0 83.34756543482861,24.39797339742632,0 83.3475627520421,24.397919686319845,0 83.34738837091201,24.397936776219893,0 83.34735886025928,24.397844002449073,0 83.34744470943085,24.397814705454678,0 83.34739373648553,24.397636481926323,0 83.34735617747285,24.397609626304302,0 83.34737763976577,24.397529059403993,0 83.34744202664447,24.397516852293386,0 83.3474608061508,24.39738745684851,0 83.34743397828458,24.39738989827322,0 83.34743934385794,24.39726294412549,0 83.34748763401718,24.39722143985667,0 83.3475090963101,24.39706518837141,0 83.34761104220148,24.397074954095075,0 83.3476029938416,24.397250736988653,0 83.34759494548146,24.39741675394149,0 83.34772371923887,24.397717048757816,0 83.34766201514735,24.397714607339374,0 83.34761909056152,24.39764868902502,0 83.34746885451119,24.39769751740948,0 83.34749031680411,24.39773658010334,0 83.34755738646935,24.39773902152134,0 83.34758421433561,24.397824471120252,0 83.34760835941506,24.39794898328979,0 83.3476670022112,24.39793658076958,0 83.34779874792112,24.3981995703676,0 83.34770950082738,24.398245980239757,0 83.34762308746576,24.398482296247153,0 83.34768109023571,24.398597712506646,0 83.34795828684041,24.398612038172537,0 83.34799852863972,24.398363015017992,0 83.34822388271544,24.398380104858017,0 83.3482515557179,24.398339878910555,0 83.34840447455505,24.398361851565774,0 83.34849032372666,24.398483921802036,0 83.34833740488978,24.398554722485034,0 83.34844719618559,24.39870793798935,0 83.34870468825102,24.398776027366896,0 83.34893368184566,24.398779691368244,0 83.34895882755518,24.39891037401314,0 83.3492236956954,24.39887678736498,0 83.34936082363129,24.399010217905413,0 83.34969863164022,24.39882894062073,0 83.34946224026584,24.39826609299933,0 83.34901048087458,24.397828083826745,0 83.34883624320972,24.39756723042758,0 83.34873429731834,24.397616058843298,0 83.34872088338535,24.397694184269508,0 83.34864039978685,24.397725922710116,0 83.34858674405454,24.397647797303527,0 83.3486028407741,24.397584320375312,0 83.34867795879957,24.39755014047752,0 83.34872624895846,24.397584320375312,0 83.34880136698362,24.39753549194706,0 83.34868111749734,24.397345857405135,0 83.34872333800134,24.39728053986873,0 83.34861475098181,24.397130934893067,0 83.34832466075011,24.397233379609883,0 83.34807353786303,24.396709334607085,0 83.34802410883245,24.396781371719953,0 83.34764811754563,24.396865890686023,0 83.34762877012506,24.396790190404353,0 83.34740878162262,24.39685610916672,0 83.34739805047616,24.39675356885491,0 83.3475053619407,24.39671938873233,0 83.347510727514,24.396804839021247,0 83.34760194225872,24.396785307531832,0 83.34763145291153,24.39675845172866,0 83.34760251017327,24.396548503761018,0 83.34750056428184,24.39653873799691,0 83.34726179627313,24.396597332570515,0 83.34722612053156,24.39665394206954,0 83.34720937101072,24.396832970882613,0 83.34731936526174,24.396859826669754,0 83.34724424723663,24.39707955562303,0 83.34716644642484,24.3971698885261,0 83.34719059150423,24.397479949621687,0 83.34725497838294,24.39749703958121,0 83.34727375788927,24.397565399396054,0 83.34722278494361,24.397599579289775,0 83.34734887591483,24.397977998921693,0 83.34745873359583,24.398318519488623,0</coordinates></LinearRing></outerBoundaryIs></Polygon>
+</Placemark>
+<Placemark>
+<name>75091</name>
+<ExtendedData>
+<Data name="Kyari ID"><value>75091</value></Data>
+<Data name="Kyari Name"><value>Kyaari 1</value></Data>
+<Data name="Farm ID"><value>68180</value></Data>
+<Data name="Farmer ID"><value>155839</value></Data>
+<Data name="Farmer Name"><value>Chandrabhan Gupta</value></Data>
+<Data name="Kyari Type"><value>PLANTATION</value></Data>
+<Data name="Plantation Model"><value>BOUNDARY+MIXED</value></Data>
+<Data name="Year"><value>None</value></Data>
+<Data name="Total Area"><value>13.5611</value></Data>
+<Data name="Created On"><value>2025-07-21 02:27:20</value></Data>
+<Data name="Total Baseline Trees"><value>0</value></Data>
+<Data name="Total Sapling Trees"><value>0</value></Data>
+<Data name="Total Retro Trees"><value>4</value></Data>
+<Data name="Specie Names"><value></value></Data>
+<Data name="Block"><value>Kone</value></Data>
+<Data name="District"><value>Sonbhadra</value></Data>
+<Data name="State"><value>Uttar Pradesh</value></Data>
+<Data name="Country"><value>India</value></Data>
+<Data name="Organisation"><value>Guiding Souls Trust</value></Data>
+<Data name="Surveyor Name"><value>Sandeep Tiwari</value></Data>
+<Data name="RS Status"><value>REJECTED</value></Data>
+<Data name="Verification Status"><value>ACCEPTED</value></Data>
+<Data name="Verification Remarks"><value>Valid Boundary</value></Data>
+<Data name="Pre Feasibility Status"><value>REJECTED</value></Data>
+</ExtendedData>
+<Polygon><outerBoundaryIs><LinearRing><coordinates>83.34272336214781,24.400420542619376,0 83.3426532894373,24.40053901039972,0 83.34268614649773,24.400830294108815,0 83.34272034466267,24.400954257412256,0 83.34271229803562,24.401353015390782,0 83.34270190447569,24.40163788536559,0 83.34282662719488,24.40167452454401,0 83.34283601492643,24.401823218433996,0 83.34313172847033,24.40180062430183,0 83.3430764079094,24.401930998495327,0 83.34278706406137,24.40198588927942,0 83.34277901570148,24.402325234507515,0 83.3429587624046,24.402381385068885,0 83.34309116005898,24.40254012204235,0 83.34367386996746,24.402564547987975,0 83.34371645003557,24.403224657379685,0 83.34381672937958,24.40323864942834,0 83.34385224930365,24.403349085649623,0 83.34378120945578,24.403389489121054,0 83.3438137693861,24.40351608658123,0 83.34398840901186,24.403502618772247,0 83.343985449018,24.403421811888908,0 83.34403576891019,24.40340295694187,0 83.34405352887208,24.403561877120666,0 83.34383448934152,24.40360766764345,0 83.34385760128498,24.403742178287274,0 83.34395288908809,24.404318765396397,0 83.34405944885972,24.404318765396397,0 83.34413048870734,24.40442381358869,0 83.34408904879619,24.404501926290376,0 83.34400024898643,24.404536942313285,0 83.34404760888503,24.404782054202453,0 83.34439688813629,24.40478474773695,0 83.34430216833945,24.404246039673556,0 83.34495040694992,24.40413560423666,0 83.34460895508528,24.402426846657725,0 83.34441551553549,24.40241556365896,0 83.3443778766581,24.402225050655503,0 83.34419276438183,24.402234815979995,0 83.34406935619754,24.402237257311022,0 83.3440961840636,24.40215669336247,0 83.34419008159506,24.402161576027336,0 83.34417666766213,24.402207961335638,0 83.34431617256598,24.402210402667173,0 83.344372511085,24.40220552000404,0 83.34438592501803,24.40217622402126,0 83.34450396762892,24.40213960403337,0 83.34457609802485,24.402028702720745,0 83.34453600783742,24.401514754431123,0 83.34451824787529,24.40145549512219,0 83.34439392814173,24.401442027093655,0 83.34434656824334,24.401433946275667,0 83.34430881300686,24.401496687069805,0 83.34424174334158,24.40149424572445,0 83.34424979170147,24.401396591872263,0 83.34432222694011,24.40138926783019,0 83.34452611872267,24.401391709177602,0 83.34454221544249,24.40114757420747,0 83.34430553019047,24.40116004844046,0 83.34426796227072,24.400833573498176,0 83.3440533393417,24.400816483990265,0 83.34403455983536,24.400860428434747,0 83.34397285574319,24.400865311149918,0 83.34397553852976,24.40078718768531,0 83.34379310904006,24.400691974647387,0 83.3435581997037,24.400688926941857,0 83.34272336214781,24.400420542619376,0</coordinates></LinearRing></outerBoundaryIs><innerBoundaryIs><LinearRing><coordinates>83.34338821470737,24.400881283955247,0 83.34340665489435,24.400764037810525,0 83.34371108561754,24.400742054146264,0 83.34371343255043,24.400916091383525,0 83.34338821470737,24.400881283955247,0</coordinates></LinearRing></innerBoundaryIs><innerBoundaryIs><LinearRing><coordinates>83.34391660988331,24.401220197980344,0 83.34390621632338,24.401056542312407,0 83.34404770284891,24.401050435753522,0 83.34406211972237,24.401219587325254,0 83.34391660988331,24.401220197980344,0</coordinates></LinearRing></innerBoundaryIs><innerBoundaryIs><LinearRing><coordinates>83.3430827781558,24.401202794309313,0 83.34307137876749,24.401129820995912,0 83.34318269044161,24.401133179601214,0 83.34318269044161,24.401209816843533,0 83.3430827781558,24.401202794309313,0</coordinates></LinearRing></innerBoundaryIs></Polygon>
+</Placemark>
+<Placemark>
+<name>75090</name>
+<ExtendedData>
+<Data name="Kyari ID"><value>75090</value></Data>
+<Data name="Kyari Name"><value>Kyaari 2</value></Data>
+<Data name="Farm ID"><value>68182</value></Data>
+<Data name="Farmer ID"><value>155837</value></Data>
+<Data name="Farmer Name"><value>Shashikant </value></Data>
+<Data name="Kyari Type"><value>PLANTATION</value></Data>
+<Data name="Plantation Model"><value>None</value></Data>
+<Data name="Year"><value>None</value></Data>
+<Data name="Total Area"><value>4.5328</value></Data>
+<Data name="Created On"><value>2025-07-21 02:24:33</value></Data>
+<Data name="Total Baseline Trees"><value>0</value></Data>
+<Data name="Total Sapling Trees"><value>0</value></Data>
+<Data name="Total Retro Trees"><value>1</value></Data>
+<Data name="Specie Names"><value></value></Data>
+<Data name="Block"><value>Kone</value></Data>
+<Data name="District"><value>Sonbhadra</value></Data>
+<Data name="State"><value>Uttar Pradesh</value></Data>
+<Data name="Country"><value>India</value></Data>
+<Data name="Organisation"><value>Guiding Souls Trust</value></Data>
+<Data name="Surveyor Name"><value>Sandeep Tiwari</value></Data>
+<Data name="RS Status"><value>REJECTED</value></Data>
+<Data name="Verification Status"><value>REJECTED</value></Data>
+<Data name="Verification Remarks"><value>Old Plantation</value></Data>
+<Data name="Pre Feasibility Status"><value>REJECTED</value></Data>
+</ExtendedData>
+<Polygon><outerBoundaryIs><LinearRing><coordinates>83.33956137299538,24.40428259608645,0 83.33891797810793,24.404577534994555,0 83.33899743855,24.40498910490756,0 83.33886131644249,24.40536464601682,0 83.33893742412329,24.405606457261946,0 83.33927236497402,24.40552432697936,0 83.33933908492327,24.40528953788432,0 83.33950739353895,24.405450745528398,0 83.33979941904545,24.40544372323001,0 83.34011491388083,24.40538571292402,0 83.34017794579268,24.40514145871173,0 83.3403992280364,24.40520404889865,0 83.34063224494457,24.40538327038423,0 83.3407174050808,24.40527152413858,0 83.34083676338196,24.40524404553844,0 83.34117639809847,24.404503342352708,0 83.34063794463873,24.404601960546124,0 83.3406188338995,24.40471798185155,0 83.34042504429817,24.404856596639846,0 83.34018666297197,24.40486056578353,0 83.33956137299538,24.40428259608645,0</coordinates></LinearRing></outerBoundaryIs></Polygon>
+</Placemark>
+<Placemark>
+<name>75089</name>
+<ExtendedData>
+<Data name="Kyari ID"><value>75089</value></Data>
+<Data name="Kyari Name"><value>Kyaari 2</value></Data>
+<Data name="Farm ID"><value>68619</value></Data>
+<Data name="Farmer ID"><value>156270</value></Data>
+<Data name="Farmer Name"><value>Shambhunath </value></Data>
+<Data name="Kyari Type"><value>PLANTATION</value></Data>
+<Data name="Plantation Model"><value>BOUNDARY+MIXED</value></Data>
+<Data name="Year"><value>None</value></Data>
+<Data name="Total Area"><value>2.0672</value></Data>
+<Data name="Created On"><value>2025-07-21 02:19:10</value></Data>
+<Data name="Total Baseline Trees"><value>0</value></Data>
+<Data name="Total Sapling Trees"><value>0</value></Data>
+<Data name="Total Retro Trees"><value>5</value></Data>
+<Data name="Specie Names"><value></value></Data>
+<Data name="Block"><value>Kone</value></Data>
+<Data name="District"><value>Sonbhadra</value></Data>
+<Data name="State"><value>Uttar Pradesh</value></Data>
+<Data name="Country"><value>India</value></Data>
+<Data name="Organisation"><value>Guiding Souls Trust</value></Data>
+<Data name="Surveyor Name"><value>Sandeep Tiwari</value></Data>
+<Data name="RS Status"><value>REJECTED</value></Data>
+<Data name="Verification Status"><value>ACCEPTED</value></Data>
+<Data name="Verification Remarks"><value>Valid Boundary</value></Data>
+<Data name="Pre Feasibility Status"><value>REJECTED</value></Data>
+</ExtendedData>
+<Polygon><outerBoundaryIs><LinearRing><coordinates>83.33730734834134,24.385452170705474,0 83.3375492603424,24.385417686441247,0 83.33757257716185,24.385383202167592,0 83.33752525283116,24.38534583122461,0 83.33754939791066,24.385221306635298,0 83.33764597822893,24.3852335149338,0 83.33765939216197,24.385314089674193,0 83.3376486610155,24.385421522581517,0 83.33760573642968,24.38550698051081,0 83.33768353724146,24.38553383870524,0 83.33769158560129,24.385482563965557,0 83.33770768232111,24.385450822449542,0 83.337742558547,24.385421522581517,0 83.33783377329199,24.385463030725834,0 83.33783913886509,24.385577788465678,0 83.33802693392794,24.385670571242937,0 83.3380027888485,24.38572917085673,0 83.33795181590278,24.385778003847282,0 83.33786328394459,24.385812186929584,0 83.33784182165172,24.385890319654184,0 83.33835959946815,24.38590252788805,0 83.33839447569406,24.385697429402903,0 83.33842935191996,24.38565103803259,0 83.33853666338449,24.385685221149064,0 83.33855007731783,24.385797537038915,0 83.33862787812987,24.385787770443677,0 83.33863860927629,24.38593426929123,0 83.33882062416892,24.386076554204188,0 83.33902242375879,24.38610541517676,0 83.33914350351296,24.38618937433203,0 83.33929341177978,24.386155265931734,0 83.33926170041458,24.386047693225176,0 83.33919251198368,24.385937496699032,0 83.33906278367611,24.385927001786772,0 83.33911179214776,24.385688242296865,0 83.33923863760427,24.385515075791332,0 83.3390570179734,24.38513200964845,0 83.33882638987035,24.385147752115834,0 83.3386534187932,24.38519760324877,0 83.33863323883423,24.385315671642932,0 83.33877449854798,24.38542062123382,0 83.3388119756146,24.385541313156015,0 83.33892152396349,24.38548096720935,0 83.33896764958409,24.385530818210828,0 83.33902530660974,24.385625272685974,0 83.33908296363533,24.385714479625594,0 83.3390166580564,24.38591650687326,0 83.3390253066101,24.385772201729147,0 83.33894170392283,24.385814181424433,0 83.33882638987157,24.385575421721633,0 83.33871684152268,24.38563052015455,0 83.33868224730715,24.385494085895665,0 83.33852945618926,24.385562303043624,0 83.33832477374783,24.385614777747673,0 83.33801342580917,24.385507204580737,0 83.33789811175761,24.38542062123373,0 83.33788081464954,24.385347156529303,0 83.33787216609578,24.385257949330672,0 83.3377799148548,24.385168742068824,0 83.33758659660816,24.385184599170078,0 83.3372869461243,24.3851709910453,0 83.33730734834134,24.385452170705474,0</coordinates></LinearRing></outerBoundaryIs></Polygon>
+</Placemark>
+<Placemark>
+<name>75088</name>
+<ExtendedData>
+<Data name="Kyari ID"><value>75088</value></Data>
+<Data name="Kyari Name"><value>Kyaari 1</value></Data>
+<Data name="Farm ID"><value>68619</value></Data>
+<Data name="Farmer ID"><value>156270</value></Data>
+<Data name="Farmer Name"><value>Shambhunath </value></Data>
+<Data name="Kyari Type"><value>PLANTATION</value></Data>
+<Data name="Plantation Model"><value>BOUNDARY+BLOCK</value></Data>
+<Data name="Year"><value>None</value></Data>
+<Data name="Total Area"><value>1.7294</value></Data>
+<Data name="Created On"><value>2025-07-21 02:14:12</value></Data>
+<Data name="Total Baseline Trees"><value>0</value></Data>
+<Data name="Total Sapling Trees"><value>0</value></Data>
+<Data name="Total Retro Trees"><value>2</value></Data>
+<Data name="Specie Names"><value></value></Data>
+<Data name="Block"><value>Kone</value></Data>
+<Data name="District"><value>Sonbhadra</value></Data>
+<Data name="State"><value>Uttar Pradesh</value></Data>
+<Data name="Country"><value>India</value></Data>
+<Data name="Organisation"><value>Guiding Souls Trust</value></Data>
+<Data name="Surveyor Name"><value>Sandeep Tiwari</value></Data>
+<Data name="RS Status"><value>REJECTED</value></Data>
+<Data name="Verification Status"><value>ACCEPTED</value></Data>
+<Data name="Verification Remarks"><value>Valid Boundary</value></Data>
+<Data name="Pre Feasibility Status"><value>REJECTED</value></Data>
+</ExtendedData>
+<Polygon><outerBoundaryIs><LinearRing><coordinates>83.33658357155021,24.386452139852057,0 83.33680087726606,24.386452139852057,0 83.33692160266354,24.386552246890012,0 83.33710939772658,24.386483881116618,0 83.33716841903218,24.38640330712175,0 83.33726231656368,24.386696303219946,0 83.33733206901574,24.386693861588547,0 83.33729451000306,24.386476556210013,0 83.33727573049671,24.38641063203256,0 83.33720866083144,24.386366682561796,0 83.3372600376606,24.38626253759277,0 83.33743401490692,24.38622262585615,0 83.33758425095749,24.386193326167046,0 83.3377291214347,24.38618355960237,0 83.33776131487403,24.38625436717815,0 83.33777741159359,24.38635447437278,0 83.33762717554328,24.38638621566187,0 83.3376486378362,24.386483881116618,0 83.33760571325041,24.38675734398832,0 83.33772643864792,24.38675734398832,0 83.33773716979438,24.38662305425926,0 83.33768083127552,24.386564455059908,0 83.33768619684888,24.3864789978456,0 83.33782033617943,24.386442373307606,0 83.33783375011267,24.386598637929342,0 83.33788204027155,24.386601079562546,0 83.33790350256447,24.386767110508462,0 83.33790618535124,24.386901400084486,0 83.33782570175278,24.386874542180674,0 83.33779350831341,24.386898958457262,0 83.33771034192837,24.386969765632024,0 83.33762180996997,24.386920933101916,0 83.33762449275675,24.386855009156285,0 83.33753059522525,24.386828151242664,0 83.33751986407879,24.386881867064222,0 83.33740623658215,24.387032330952483,0 83.33737136035626,24.387020122827774,0 83.33734721527655,24.386988381698135,0 83.33728014561127,24.386993264949215,0 83.33727304771014,24.38706010576328,0 83.33683843627848,24.386808618210846,0 83.33650308795174,24.386581546495897,0 83.33658357155021,24.386452139852057,0</coordinates></LinearRing></outerBoundaryIs></Polygon>
+</Placemark>
+<Placemark>
+<name>74846</name>
+<ExtendedData>
+<Data name="Kyari ID"><value>74846</value></Data>
+<Data name="Kyari Name"><value>Kyaari 2</value></Data>
+<Data name="Farm ID"><value>68198</value></Data>
+<Data name="Farmer ID"><value>155842</value></Data>
+<Data name="Farmer Name"><value>Rajnarayan Singh</value></Data>
+<Data name="Kyari Type"><value>PLANTATION</value></Data>
+<Data name="Plantation Model"><value>None</value></Data>
+<Data name="Year"><value>None</value></Data>
+<Data name="Total Area"><value>2.165</value></Data>
+<Data name="Created On"><value>2025-07-18 11:16:43</value></Data>
+<Data name="Total Baseline Trees"><value>0</value></Data>
+<Data name="Total Sapling Trees"><value>0</value></Data>
+<Data name="Total Retro Trees"><value>0</value></Data>
+<Data name="Specie Names"><value></value></Data>
+<Data name="Block"><value>Kone</value></Data>
+<Data name="District"><value>Sonbhadra</value></Data>
+<Data name="State"><value>Uttar Pradesh</value></Data>
+<Data name="Country"><value>India</value></Data>
+<Data name="Organisation"><value>Guiding Souls Trust</value></Data>
+<Data name="Surveyor Name"><value>Sandeep Tiwari</value></Data>
+<Data name="RS Status"><value>REJECTED</value></Data>
+<Data name="Verification Status"><value>ACCEPTED</value></Data>
+<Data name="Verification Remarks"><value>Valid Boundary</value></Data>
+<Data name="Pre Feasibility Status"><value>ACCEPTED</value></Data>
+</ExtendedData>
+<Polygon><outerBoundaryIs><LinearRing><coordinates>83.33714336156845,24.399933846500147,0 83.3374748766722,24.399907410217153,0 83.33748135967829,24.39972737655625,0 83.33752998222448,24.39971852243547,0 83.3376045367954,24.39982772321876,0 83.33770178188762,24.39990741021746,0 83.33774067992465,24.399978243063,0 83.33800000017159,24.4000048053698,0 83.33794813612244,24.39995168075069,0 83.33794813612244,24.39988084789025,0 83.33792220409775,24.39980706361862,0 83.3379016677554,24.39966016027917,0 83.33793386119473,24.39955518086071,0 83.33797946856708,24.39956982915671,0 83.33801166200666,24.399511235961647,0 83.33808946281835,24.399562505008888,0 83.33808409724524,24.39962109818016,0 83.33800897921984,24.399633305087374,0 83.3379419095546,24.399655277517372,0 83.33800000017159,24.39988084789025,0 83.33805186422094,24.399910361586837,0 83.33810372827008,24.399925118432552,0 83.338298218455,24.399901507478578,0 83.3382690449272,24.399839528703435,0 83.3382917354487,24.39968900869415,0 83.33836629001962,24.399691960068644,0 83.33836629001962,24.39987199377998,0 83.33863209327212,24.39973327930365,0 83.3385445726891,24.39955324539437,0 83.33852512367162,24.39946470403391,0 83.33853808968398,24.399367308465116,0 83.33842463707603,24.399393870900347,0 83.33825607891606,24.399452898514436,0 83.33825932041917,24.399373211228994,0 83.33838898054215,24.399325989110316,0 83.3385607802055,24.39931123219461,0 83.33858347072639,24.399346648789486,0 83.33862236876318,24.39953848850563,0 83.33872933836486,24.39971852243593,0 83.33893355305895,24.39962998119082,0 83.33892707005268,24.39946175265421,0 83.33880389293577,24.39944994713442,0 83.33879416842657,24.39939091951902,0 83.33884927397884,24.39933189187619,0 83.33889465502196,24.399346648789486,0 83.33891734554348,24.39940862780648,0 83.33898865861127,24.39942633609147,0 83.33896920959303,24.399269912821275,0 83.33876175339601,24.399272864205567,0 83.33861912726067,24.399213836507535,0 83.33865478379435,24.399178419875497,0 83.33894003606544,24.399213836507535,0 83.33892707005307,24.39910758658142,0 83.33823987140053,24.39919317680673,0 83.33775040443558,24.39927286420572,0 83.33773265219868,24.399376959787638,0 83.33776216285128,24.39938672533229,0 83.33786142595613,24.399369635628442,0 83.33796337184752,24.399306159565477,0 83.33803312429933,24.399374518401256,0 83.3379714202072,24.399394049490517,0 83.33789361939546,24.399391608104505,0 83.33772996941191,24.399401373648086,0 83.33714336156845,24.399933846500147,0</coordinates></LinearRing></outerBoundaryIs></Polygon>
+</Placemark>
+<Placemark>
+<name>74845</name>
+<ExtendedData>
+<Data name="Kyari ID"><value>74845</value></Data>
+<Data name="Kyari Name"><value>Kyaari 1</value></Data>
+<Data name="Farm ID"><value>68198</value></Data>
+<Data name="Farmer ID"><value>155842</value></Data>
+<Data name="Farmer Name"><value>Rajnarayan Singh</value></Data>
+<Data name="Kyari Type"><value>PLANTATION</value></Data>
+<Data name="Plantation Model"><value>None</value></Data>
+<Data name="Year"><value>None</value></Data>
+<Data name="Total Area"><value>5.355</value></Data>
+<Data name="Created On"><value>2025-07-18 11:14:49</value></Data>
+<Data name="Total Baseline Trees"><value>0</value></Data>
+<Data name="Total Sapling Trees"><value>0</value></Data>
+<Data name="Total Retro Trees"><value>1</value></Data>
+<Data name="Specie Names"><value></value></Data>
+<Data name="Block"><value>Kone</value></Data>
+<Data name="District"><value>Sonbhadra</value></Data>
+<Data name="State"><value>Uttar Pradesh</value></Data>
+<Data name="Country"><value>India</value></Data>
+<Data name="Organisation"><value>Guiding Souls Trust</value></Data>
+<Data name="Surveyor Name"><value>Sandeep Tiwari</value></Data>
+<Data name="RS Status"><value>ACCEPTED</value></Data>
+<Data name="Verification Status"><value>REJECTED</value></Data>
+<Data name="Verification Remarks"><value>Wetland Area</value></Data>
+<Data name="Pre Feasibility Status"><value>ACCEPTED</value></Data>
+</ExtendedData>
+<Polygon><outerBoundaryIs><LinearRing><coordinates>83.33684798330069,24.400306654674228,0 83.3374534919858,24.400370468575723,0 83.33772338926792,24.400367415279728,0 83.33788063377142,24.400583283124174,0 83.33781659603119,24.400809837098763,0 83.33788130432367,24.401164933683358,0 83.33816327154636,24.401645213202123,0 83.33813041448593,24.401844591258,0 83.33762817084789,24.40170658381641,0 83.33621431142092,24.4017026145736,0 83.33684798330069,24.400306654674228,0</coordinates></LinearRing></outerBoundaryIs></Polygon>
+</Placemark>
+<Placemark>
+<name>74833</name>
+<ExtendedData>
+<Data name="Kyari ID"><value>74833</value></Data>
+<Data name="Kyari Name"><value>Kyaari 1</value></Data>
+<Data name="Farm ID"><value>68203</value></Data>
+<Data name="Farmer ID"><value>155851</value></Data>
+<Data name="Farmer Name"><value>Sudhanshu </value></Data>
+<Data name="Kyari Type"><value>PLANTATION</value></Data>
+<Data name="Plantation Model"><value>None</value></Data>
+<Data name="Year"><value>None</value></Data>
+<Data name="Total Area"><value>6.9455</value></Data>
+<Data name="Created On"><value>2025-07-18 09:49:13</value></Data>
+<Data name="Total Baseline Trees"><value>0</value></Data>
+<Data name="Total Sapling Trees"><value>0</value></Data>
+<Data name="Total Retro Trees"><value>0</value></Data>
+<Data name="Specie Names"><value></value></Data>
+<Data name="Block"><value>Kone</value></Data>
+<Data name="District"><value>Sonbhadra</value></Data>
+<Data name="State"><value>Uttar Pradesh</value></Data>
+<Data name="Country"><value>India</value></Data>
+<Data name="Organisation"><value>Guiding Souls Trust</value></Data>
+<Data name="Surveyor Name"><value>Sandeep Tiwari</value></Data>
+<Data name="RS Status"><value>REJECTED</value></Data>
+<Data name="Verification Status"><value>REJECTED</value></Data>
+<Data name="Verification Remarks"><value>Old Plantation</value></Data>
+<Data name="Pre Feasibility Status"><value>REJECTED</value></Data>
+</ExtendedData>
+<Polygon><outerBoundaryIs><LinearRing><coordinates>83.31045806407928,24.405693472558827,0 83.31059385091066,24.404694472279846,0 83.31070080399513,24.40389270166936,0 83.31075008958578,24.40368172462694,0 83.31056099385023,24.403382509114337,0 83.31032194197178,24.40329335496737,0 83.3097767829895,24.403368464287137,0 83.30960512161255,24.403402049740873,0 83.30980125814676,24.404057574944858,0 83.30940395593643,24.404067345206283,0 83.30942273139954,24.40533899934245,0 83.3094559237361,24.40561989120642,0 83.30970905721188,24.4056797333054,0 83.31001315265894,24.405579589368685,0 83.31045806407928,24.405693472558827,0</coordinates></LinearRing></outerBoundaryIs><innerBoundaryIs><LinearRing><coordinates>83.31045739352703,24.405394567130344,0 83.3103745803237,24.40538174379685,0 83.3103447407484,24.40514054275755,0 83.31048052757978,24.405170158606165,0 83.31045739352703,24.405394567130344,0</coordinates></LinearRing></innerBoundaryIs></Polygon>
+</Placemark>
+<Placemark>
+<name>74832</name>
+<ExtendedData>
+<Data name="Kyari ID"><value>74832</value></Data>
+<Data name="Kyari Name"><value>Kyaari 1</value></Data>
+<Data name="Farm ID"><value>68206</value></Data>
+<Data name="Farmer ID"><value>155852</value></Data>
+<Data name="Farmer Name"><value>Priyanshu </value></Data>
+<Data name="Kyari Type"><value>PLANTATION</value></Data>
+<Data name="Plantation Model"><value>None</value></Data>
+<Data name="Year"><value>None</value></Data>
+<Data name="Total Area"><value>1.2004</value></Data>
+<Data name="Created On"><value>2025-07-18 09:48:02</value></Data>
+<Data name="Total Baseline Trees"><value>0</value></Data>
+<Data name="Total Sapling Trees"><value>0</value></Data>
+<Data name="Total Retro Trees"><value>0</value></Data>
+<Data name="Specie Names"><value></value></Data>
+<Data name="Block"><value>Kone</value></Data>
+<Data name="District"><value>Sonbhadra</value></Data>
+<Data name="State"><value>Uttar Pradesh</value></Data>
+<Data name="Country"><value>India</value></Data>
+<Data name="Organisation"><value>Guiding Souls Trust</value></Data>
+<Data name="Surveyor Name"><value>Sandeep Tiwari</value></Data>
+<Data name="RS Status"><value>REJECTED</value></Data>
+<Data name="Verification Status"><value>ACCEPTED</value></Data>
+<Data name="Verification Remarks"><value>Valid Boundary</value></Data>
+<Data name="Pre Feasibility Status"><value>ACCEPTED</value></Data>
+</ExtendedData>
+<Polygon><outerBoundaryIs><LinearRing><coordinates>83.30901730467976,24.404035832369566,0 83.30882852926024,24.404059229199245,0 83.308774873528,24.404000638086913,0 83.30873463172878,24.403907868770343,0 83.30871853500896,24.403861484086615,0 83.30869975550289,24.4038126580851,0 83.30868365878307,24.403763832064875,0 83.30868634156964,24.40371500602554,0 83.30873463172878,24.403683269089917,0 83.30878292188792,24.40367838648383,0 83.30887413663264,24.403671062574126,0 83.3089368353859,24.403659241619575,0 83.30896557441903,24.403575554633594,0 83.30913436693413,24.403575851710343,0 83.30924436118549,24.40356852779489,0 83.30925240954538,24.403605147368445,0 83.30935067746871,24.40361739813392,0 83.30935167265002,24.403514819067674,0 83.30939996280917,24.403507495148467,0 83.3094241078886,24.40355876257354,0 83.30948862482975,24.403580785072155,0 83.30952068820669,24.403527025598578,0 83.30958260921366,24.40350532671477,0 83.3097596731302,24.40402288262892,0 83.30942164201683,24.404052178183285,0 83.3093161906287,24.404046293207692,0 83.30901730467976,24.404035832369566,0</coordinates></LinearRing></outerBoundaryIs></Polygon>
+</Placemark>
+</Document>
+</kml>
