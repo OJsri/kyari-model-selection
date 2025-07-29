@@ -438,8 +438,9 @@ function createPlotVisualization() {
                             <div style="font-size: 0.9em; color: #666; line-height: 1.4;">
                                 • Boundary setback: 5m from edges<br>
                                 • Inside tree spacing: 5m × 5m<br>
-                                • Inside area available: ${Math.max(0, areaInSqM - (perimeter * 5)).toLocaleString()} sq.m<br>
-                                • Real-world buffer: 5% reduction applied for practical scenarios
+                                • Inside area available: ${Math.max(0, areaInSqM - (perimeter * 5) + 100).toLocaleString()} sq.m<br>
+                                • Boundary buffer: 5% reduction for practical scenarios<br>
+                                • Inside buffer: +100m² overlap + 9 trees (experimental)
                             </div>
                         </div>
                     </div>
@@ -704,21 +705,22 @@ function calculateInsideTrees(kyari, model) {
         total: 0
     };
     
-    // New approach: Total Area - (Perimeter × 5m setback)
+    // Updated approach: Total Area - (Perimeter × 5m setback) + 100m² for overlapping area
     const boundarySetback = 5; // meters
     const perimeter = kyari.perimeter;
     const totalAreaSqMeters = kyari.areaInSqMeters;
+    const overlapBuffer = 100; // 100 sq.m for overlapping area
     
-    // Calculate inside area by subtracting boundary buffer area
+    // Calculate inside area with overlap buffer
     const boundaryBufferArea = perimeter * boundarySetback;
-    const insideArea = Math.max(0, totalAreaSqMeters - boundaryBufferArea);
+    const netInsideArea = Math.max(0, totalAreaSqMeters - boundaryBufferArea + overlapBuffer);
     
     // Calculate number of trees with 5m x 5m spacing (25 sq.m per tree)
-    const areaPerTree = 5 * 5; // 25 sq.m
-    const theoreticalInsidePositions = Math.floor(insideArea / areaPerTree);
+    const areaPerTree = 25; // 5m x 5m = 25 sq.m
+    const baseTreePositions = Math.floor(netInsideArea / areaPerTree);
     
-    // Apply 5% reduction for real-world scenarios (buffer for wastage, accessibility, terrain issues, etc.)
-    const totalInsidePositions = Math.floor(theoreticalInsidePositions * 0.95);
+    // Add experimental buffer of 9 trees (found through field experiments)
+    const totalInsidePositions = baseTreePositions + 9;
     
     // Distribute trees according to model composition
     const composition = model.treeComposition;
@@ -844,10 +846,10 @@ function displayResults(results, model) {
     // Add tree type breakdown
     detailedHTML += '<h4 style="margin-top: 30px; color: #2d5a2d;">Tree Type Distribution</h4>';
     detailedHTML += `<p style="margin-bottom: 15px; color: #666; font-style: italic;">
-        <strong>Boundary Trees:</strong> ${model.boundaryTree} only (${getBoundarySpacing(model.boundaryTree)}m spacing) | 
+        <strong>Boundary Trees:</strong> ${model.boundaryTree} only (${getBoundarySpacing(model.boundaryTree)}m spacing) with 5% reduction for practical scenarios | 
         <strong>Inside Trees:</strong> Mixed according to model percentages (5m × 5m spacing)<br>
-        <strong>Calculation Method:</strong> Inside Area = Total Area - (Perimeter × 5m setback)<br>
-        <strong>Real-world Buffer:</strong> 5% reduction applied to both boundary and inside trees for wastage/accessibility
+        <strong>Calculation Method:</strong> Inside Area = (Total Area - Perimeter × 5m) + 100m² overlap, then ÷25, then +9 experimental buffer<br>
+        <strong>Buffers:</strong> Boundary: 5% reduction | Inside: +100m² overlap area + 9 trees (field-tested)
     </p>`;
     
     detailedHTML += '<div class="detailed-table"><table>';
