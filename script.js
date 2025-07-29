@@ -195,7 +195,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // Load kyari database from CSV
 async function loadKyariDatabase() {
     try {
-        const response = await fetch('csv data.csv');
+        const response = await fetch('pproved kyari data.csv');
         const csvText = await response.text();
         kyariDatabase = parseCSV(csvText);
         populateFarmDropdown();
@@ -254,8 +254,8 @@ function createSampleData() {
             Farm_ID: '68174',
             Farmer_Name: 'Surendra pratap Singh',
             Total_Area: '0.6879',
-            perimeter: '311',
-            area: '2782',
+            'Perimeter m': '311',
+            'Area m^2': '2782',
             District: 'Sonbhadra',
             Block: 'Kone',
             Kyari_Name: 'Kyaari 5'
@@ -265,8 +265,8 @@ function createSampleData() {
             Farm_ID: '68174', 
             Farmer_Name: 'Surendra pratap Singh',
             Total_Area: '0.5135',
-            perimeter: '309',
-            area: '2077',
+            'Perimeter m': '309',
+            'Area m^2': '2077',
             District: 'Sonbhadra',
             Block: 'Kone',
             Kyari_Name: 'Kyaari 4'
@@ -350,7 +350,7 @@ function loadKyariDetails() {
             document.getElementById('selectedKyariId').textContent = selectedKyari.Kyari_ID;
             document.getElementById('selectedFarmerName').textContent = selectedKyari.Farmer_Name;
             document.getElementById('selectedArea').textContent = selectedKyari.Total_Area;
-            document.getElementById('selectedPerimeter').textContent = selectedKyari.perimeter;
+            document.getElementById('selectedPerimeter').textContent = selectedKyari['Perimeter m'];
             document.getElementById('selectedDistrict').textContent = selectedKyari.District || '-';
             document.getElementById('selectedBlock').textContent = selectedKyari.Block || '-';
             
@@ -372,8 +372,8 @@ function createPlotVisualization() {
     
     if (selectedKyari && selectedKyari.coordinates) {
         const area = parseFloat(selectedKyari.Total_Area);
-        const perimeter = parseFloat(selectedKyari.perimeter);
-        const areaInSqM = parseFloat(selectedKyari.area);
+        const perimeter = parseFloat(selectedKyari['Perimeter m']);
+        const areaInSqM = parseFloat(selectedKyari['Area m^2']);
         
         try {
             // Parse coordinates from JSON string
@@ -410,7 +410,7 @@ function createPlotVisualization() {
                         <div style="color: #2d5a2d; font-weight: bold; margin-bottom: 8px;">Plot Analysis:</div>
                         <div style="font-size: 0.9em; color: #666; line-height: 1.4;">
                             • Boundary setback: 5m from edges<br>
-                            • Inside tree spacing: 2.5m × 2.5m<br>
+                            • Inside tree spacing: 5m × 5m<br>
                             • Inside area available: ${Math.max(0, areaInSqM - (perimeter * 5)).toLocaleString()} sq.m
                         </div>
                     </div>
@@ -593,8 +593,8 @@ function getKyariForCalculation() {
         farmId: selectedKyari.Farm_ID,
         farmerName: selectedKyari.Farmer_Name,
         area: parseFloat(selectedKyari.Total_Area), // in acres
-        perimeter: parseFloat(selectedKyari.perimeter), // in meters from table
-        areaInSqMeters: parseFloat(selectedKyari.area) // in square meters from table
+        perimeter: parseFloat(selectedKyari['Perimeter m']), // in meters from table
+        areaInSqMeters: parseFloat(selectedKyari['Area m^2']) // in square meters from table
     };
 }
 
@@ -679,8 +679,8 @@ function calculateInsideTrees(kyari, model) {
     const boundaryBufferArea = perimeter * boundarySetback;
     const insideArea = Math.max(0, totalAreaSqMeters - boundaryBufferArea);
     
-    // Calculate number of trees with 2.5m x 2.5m spacing (6.25 sq.m per tree)
-    const areaPerTree = 2.5 * 2.5; // 6.25 sq.m
+    // Calculate number of trees with 5m x 5m spacing (25 sq.m per tree)
+    const areaPerTree = 5 * 5; // 25 sq.m
     const totalInsidePositions = Math.floor(insideArea / areaPerTree);
     
     // Distribute trees according to model composition
@@ -808,7 +808,7 @@ function displayResults(results, model) {
     detailedHTML += '<h4 style="margin-top: 30px; color: #2d5a2d;">Tree Type Distribution</h4>';
     detailedHTML += `<p style="margin-bottom: 15px; color: #666; font-style: italic;">
         <strong>Boundary Trees:</strong> ${model.boundaryTree} only (${getBoundarySpacing(model.boundaryTree)}m spacing) | 
-        <strong>Inside Trees:</strong> Mixed according to model percentages (2.5m × 2.5m spacing)<br>
+        <strong>Inside Trees:</strong> Mixed according to model percentages (5m × 5m spacing)<br>
         <strong>New Method:</strong> Inside Area = Total Area - (Perimeter × 5m setback)
     </p>`;
     
