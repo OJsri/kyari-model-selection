@@ -438,7 +438,8 @@ function createPlotVisualization() {
                             <div style="font-size: 0.9em; color: #666; line-height: 1.4;">
                                 • Boundary setback: 5m from edges<br>
                                 • Inside tree spacing: 5m × 5m<br>
-                                • Inside area available: ${Math.max(0, areaInSqM - (perimeter * 5)).toLocaleString()} sq.m
+                                • Inside area available: ${Math.max(0, areaInSqM - (perimeter * 5)).toLocaleString()} sq.m<br>
+                                • Real-world buffer: 5% reduction applied for practical scenarios
                             </div>
                         </div>
                     </div>
@@ -684,7 +685,10 @@ function calculateBoundaryTrees(kyari, model) {
     const boundarySpacing = getBoundarySpacing(boundaryTreeType);
     
     // Calculate total boundary trees based on perimeter and spacing
-    const totalBoundaryTrees = Math.floor(kyari.perimeter / boundarySpacing);
+    const theoreticalBoundaryTrees = Math.floor(kyari.perimeter / boundarySpacing);
+    
+    // Apply 5% reduction for real-world scenarios (buffer for wastage, accessibility, etc.)
+    const totalBoundaryTrees = Math.floor(theoreticalBoundaryTrees * 0.95);
     
     // All boundary trees are of the same type
     boundaryTrees.byType[boundaryTreeType] = totalBoundaryTrees;
@@ -711,7 +715,10 @@ function calculateInsideTrees(kyari, model) {
     
     // Calculate number of trees with 5m x 5m spacing (25 sq.m per tree)
     const areaPerTree = 5 * 5; // 25 sq.m
-    const totalInsidePositions = Math.floor(insideArea / areaPerTree);
+    const theoreticalInsidePositions = Math.floor(insideArea / areaPerTree);
+    
+    // Apply 5% reduction for real-world scenarios (buffer for wastage, accessibility, terrain issues, etc.)
+    const totalInsidePositions = Math.floor(theoreticalInsidePositions * 0.95);
     
     // Distribute trees according to model composition
     const composition = model.treeComposition;
@@ -839,7 +846,8 @@ function displayResults(results, model) {
     detailedHTML += `<p style="margin-bottom: 15px; color: #666; font-style: italic;">
         <strong>Boundary Trees:</strong> ${model.boundaryTree} only (${getBoundarySpacing(model.boundaryTree)}m spacing) | 
         <strong>Inside Trees:</strong> Mixed according to model percentages (5m × 5m spacing)<br>
-        <strong>New Method:</strong> Inside Area = Total Area - (Perimeter × 5m setback)
+        <strong>Calculation Method:</strong> Inside Area = Total Area - (Perimeter × 5m setback)<br>
+        <strong>Real-world Buffer:</strong> 5% reduction applied to both boundary and inside trees for wastage/accessibility
     </p>`;
     
     detailedHTML += '<div class="detailed-table"><table>';
