@@ -366,64 +366,94 @@ function loadKyariDetails() {
     }
 }
 
+// Parse WKT (Well-Known Text) polygon data to coordinate array
+function parseWKTPolygon(wktString) {
+    if (!wktString) return null;
+    
+    try {
+        // Remove POLYGON Z (( and )) from the string
+        const coordString = wktString
+            .replace(/^"?POLYGON\s*Z?\s*\(\(/i, '')
+            .replace(/\)\)"?$/, '');
+        
+        // Split by comma to get individual coordinate points
+        const coordPairs = coordString.split(',');
+        
+        // Convert each coordinate pair to [lon, lat]
+        const coordinates = coordPairs.map(pair => {
+            const coords = pair.trim().split(/\s+/);
+            return [parseFloat(coords[0]), parseFloat(coords[1])]; // [longitude, latitude]
+        });
+        
+        return coordinates;
+    } catch (error) {
+        console.error('Error parsing WKT:', error);
+        return null;
+    }
+}
+
 // Create plot visualization using actual coordinates
 function createPlotVisualization() {
     const plotContainer = document.getElementById('plotContainer');
     
-    if (selectedKyari && selectedKyari.coordinates) {
+    if (selectedKyari && selectedKyari.WKT) {
         const area = parseFloat(selectedKyari.Total_Area);
         const perimeter = parseFloat(selectedKyari['Perimeter m']);
         const areaInSqM = parseFloat(selectedKyari['Area m^2']);
         
         try {
-            // Parse coordinates from JSON string
-            const coordinates = JSON.parse(selectedKyari.coordinates);
+            // Parse WKT polygon data
+            const coordinates = parseWKTPolygon(selectedKyari.WKT);
             
-            // Create actual plot SVG using coordinates
-            const plotSvg = createActualPlotSVG(coordinates, selectedKyari.Kyari_ID);
-            
-            plotContainer.innerHTML = `
-                <div style="text-align: center;">
-                    <h4 style="margin: 0 0 15px 0; color: #2d5a2d;">Kyari ${selectedKyari.Kyari_ID} - ${selectedKyari.Kyari_Name}</h4>
-                    
-                    <div style="background: white; border: 2px solid #4a7c4a; border-radius: 10px; 
-                                padding: 15px; margin: 10px auto; display: inline-block;">
-                        ${plotSvg}
+            if (coordinates && coordinates.length > 0) {
+                // Create actual plot SVG using coordinates
+                const plotSvg = createActualPlotSVG(coordinates, selectedKyari.Kyari_ID);
+                
+                plotContainer.innerHTML = `
+                    <div style="text-align: center;">
+                        <h4 style="margin: 0 0 15px 0; color: #2d5a2d;">Kyari ${selectedKyari.Kyari_ID} - ${selectedKyari.Kyari_Name}</h4>
+                        
+                        <div style="background: white; border: 2px solid #4a7c4a; border-radius: 10px; 
+                                    padding: 15px; margin: 10px auto; display: inline-block;">
+                            ${plotSvg}
+                        </div>
+                        
+                        <div style="margin-top: 20px; display: flex; justify-content: center; gap: 30px; flex-wrap: wrap;">
+                            <div style="text-align: center; min-width: 120px;">
+                                <strong style="color: #2d5a2d;">Area (Acres)</strong><br>
+                                <span style="font-size: 1.3em; font-weight: bold; color: #4a7c4a;">${area}</span>
+                            </div>
+                            <div style="text-align: center; min-width: 120px;">
+                                <strong style="color: #2d5a2d;">Area (Sq.M)</strong><br>
+                                <span style="font-size: 1.3em; font-weight: bold; color: #4a7c4a;">${areaInSqM.toLocaleString()}</span>
+                            </div>
+                            <div style="text-align: center; min-width: 120px;">
+                                <strong style="color: #2d5a2d;">Perimeter</strong><br>
+                                <span style="font-size: 1.3em; font-weight: bold; color: #4a7c4a;">${perimeter} m</span>
+                            </div>
+                        </div>
+                        
+                        <div style="margin-top: 15px; padding: 15px; background: #f8fff8; border-radius: 8px; max-width: 400px; margin: 15px auto;">
+                            <div style="color: #2d5a2d; font-weight: bold; margin-bottom: 8px;">Plot Analysis:</div>
+                            <div style="font-size: 0.9em; color: #666; line-height: 1.4;">
+                                • Boundary setback: 5m from edges<br>
+                                • Inside tree spacing: 5m × 5m<br>
+                                • Inside area available: ${Math.max(0, areaInSqM - (perimeter * 5)).toLocaleString()} sq.m
+                            </div>
+                        </div>
                     </div>
-                    
-                    <div style="margin-top: 20px; display: flex; justify-content: center; gap: 30px; flex-wrap: wrap;">
-                        <div style="text-align: center; min-width: 120px;">
-                            <strong style="color: #2d5a2d;">Area (Acres)</strong><br>
-                            <span style="font-size: 1.3em; font-weight: bold; color: #4a7c4a;">${area}</span>
-                        </div>
-                        <div style="text-align: center; min-width: 120px;">
-                            <strong style="color: #2d5a2d;">Area (Sq.M)</strong><br>
-                            <span style="font-size: 1.3em; font-weight: bold; color: #4a7c4a;">${areaInSqM.toLocaleString()}</span>
-                        </div>
-                        <div style="text-align: center; min-width: 120px;">
-                            <strong style="color: #2d5a2d;">Perimeter</strong><br>
-                            <span style="font-size: 1.3em; font-weight: bold; color: #4a7c4a;">${perimeter} m</span>
-                        </div>
-                    </div>
-                    
-                    <div style="margin-top: 15px; padding: 15px; background: #f8fff8; border-radius: 8px; max-width: 400px; margin: 15px auto;">
-                        <div style="color: #2d5a2d; font-weight: bold; margin-bottom: 8px;">Plot Analysis:</div>
-                        <div style="font-size: 0.9em; color: #666; line-height: 1.4;">
-                            • Boundary setback: 5m from edges<br>
-                            • Inside tree spacing: 5m × 5m<br>
-                            • Inside area available: ${Math.max(0, areaInSqM - (perimeter * 5)).toLocaleString()} sq.m
-                        </div>
-                    </div>
-                </div>
-            `;
+                `;
+            } else {
+                throw new Error('No valid coordinates found');
+            }
         } catch (error) {
-            console.error('Error parsing coordinates:', error);
+            console.error('Error parsing WKT polygon:', error);
             // Fallback to simple visualization
             plotContainer.innerHTML = `
                 <div style="text-align: center; color: #666;">
                     <h4 style="color: #2d5a2d;">Kyari ${selectedKyari.Kyari_ID} - ${selectedKyari.Kyari_Name}</h4>
                     <p>Area: ${area} acres | Perimeter: ${perimeter} meters</p>
-                    <p><em>Plot coordinates not available for visualization</em></p>
+                    <p><em>Plot coordinates could not be parsed for visualization</em></p>
                 </div>
             `;
         }
