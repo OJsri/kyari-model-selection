@@ -614,10 +614,71 @@ function selectModel(modelKey, cardElement) {
     console.log(`Selected model: ${plantationModels[modelKey].name}`);
 }
 
+// Calculate perimeter from WKT coordinates
+function calculatePerimeterFromWKT(wktString) {
+    try {
+        // Extract coordinates from WKT POLYGON string
+        const coordsMatch = wktString.match(/POLYGON\s*Z?\s*\(\s*\(([^)]+)\)\s*\)/i);
+        if (!coordsMatch) {
+            return null;
+        }
+        
+        // Parse coordinate pairs
+        const coordPairs = coordsMatch[1].split(',').map(pair => {
+            const coords = pair.trim().split(' ');
+            return [parseFloat(coords[0]), parseFloat(coords[1])];
+        });
+        
+        if (coordPairs.length < 3) {
+            return null;
+        }
+        
+        // Calculate perimeter using Haversine formula for geographic coordinates
+        let perimeter = 0;
+        for (let i = 0; i < coordPairs.length - 1; i++) {
+            const [lon1, lat1] = coordPairs[i];
+            const [lon2, lat2] = coordPairs[i + 1];
+            perimeter += calculateDistance(lat1, lon1, lat2, lon2);
+        }
+        
+        return perimeter;
+    } catch (error) {
+        console.error('Error calculating perimeter from WKT:', error);
+        return null;
+    }
+}
+
+// Calculate distance between two geographic points using Haversine formula
+function calculateDistance(lat1, lon1, lat2, lon2) {
+    const R = 6371000; // Earth's radius in meters
+    const dLat = (lat2 - lat1) * Math.PI / 180;
+    const dLon = (lon2 - lon1) * Math.PI / 180;
+    const a = Math.sin(dLat/2) * Math.sin(dLat/2) +
+              Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
+              Math.sin(dLon/2) * Math.sin(dLon/2);
+    const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+    return R * c;
+}
+
 // Convert selected kyari to calculation format
 function getKyariForCalculation() {
     if (!selectedKyari) {
         return null;
+    }
+    
+    // Try to get perimeter from CSV column, if not available calculate from WKT
+    let perimeter = parseFloat(selectedKyari['Perimeter m']);
+    if (isNaN(perimeter) && selectedKyari.WKT) {
+        perimeter = calculatePerimeterFromWKT(selectedKyari.WKT);
+    }
+    
+    // Fallback to estimated perimeter if still not available
+    if (isNaN(perimeter) || perimeter === null) {
+        const areaInSqMeters = parseFloat(selectedKyari['Area m^2']);
+        if (!isNaN(areaInSqMeters)) {
+            // Estimate perimeter assuming roughly circular plot: P ≈ 2 * sqrt(π * A)
+            perimeter = 2 * Math.sqrt(Math.PI * areaInSqMeters);
+        }
     }
     
     return {
@@ -625,7 +686,7 @@ function getKyariForCalculation() {
         farmId: selectedKyari.Farm_ID,
         farmerName: selectedKyari.Farmer_Name,
         area: parseFloat(selectedKyari.Total_Area), // in acres
-        perimeter: parseFloat(selectedKyari['Perimeter m']), // in meters from table
+        perimeter: perimeter, // in meters - calculated from WKT or estimated
         areaInSqMeters: parseFloat(selectedKyari['Area m^2']) // in square meters from table
     };
 }
