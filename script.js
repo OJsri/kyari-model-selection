@@ -195,7 +195,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // Load kyari database from CSV
 async function loadKyariDatabase() {
     try {
-        const response = await fetch('pproved kyari data.csv');
+        const response = await fetch('Approved till 31 july.csv');
         const csvText = await response.text();
         kyariDatabase = parseCSV(csvText);
         populateFarmDropdown();
